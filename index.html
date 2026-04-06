@@ -3,115 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>交通事故治療なら にしむら整骨院</title>
+<title>apricot gym</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: linear-gradient(#111, #ffcc00);
+  color: #fff;
 }
 
-/* ヘッダー */
+/* ヘッダー /
 header {
   background: #000;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
+  color: #ffcc00;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* ファーストビュー */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f');
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-/* ボタン */
-.btn {
-  display: inline-block;
-  background: #ff6600;
-  color: #fff;
-  padding: 20px 30px;
-  margin-top: 20px;
-  text-decoration: none;
+header h1 {
+  margin: 0;
   font-size: 20px;
-  border-radius: 10px;
+}
+
+/ インスタ /
+.insta-header {
+  width: 28px;
+}
+
+/ ナビ /
+nav {
+  background: #000;
+  padding: 8px 15px;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/ ヒーロー /
+.hero {
+  background: url('anime-gym.jpg') center/cover;
+  text-align: center;
+  padding: 80px 15px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 26px;
   font-weight: bold;
-  animation: pulse 1.5s infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 0 #000;
 }
 
-/* 点滅 */
-@keyframes pulse {
-  0% { transform: scale(1);}
-  50% { transform: scale(1.08);}
-  100% { transform: scale(1);}
+.hero p {
+  font-size: 16px;
+  margin-top: 10px;
 }
 
-/* セクション */
+/ ドン!!風 /
+.impact {
+  font-size: 40px;
+  color: #ff0000;
+  font-weight: bold;
+  transform: rotate(-5deg);
+}
+
+/ セクション /
 .section {
-  padding: 40px 20px;
+  padding: 40px 15px;
   text-align: center;
 }
 
 .section h2 {
-  color: #ff9900;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
-/* ボックス */
-.features {
+/ グレー背景 /
+#about {
+  background: #fff;
+  color: #000;
+}
+
+/ カード /
+.flex {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  gap: 20px;
 }
 
-.box {
-  background: #f5f5f5;
-  padding: 18px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-/* 中間CTA */
-.mid-cta {
-  background: #fff3cd;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-/* 下CTA */
-.cta {
-  background: #000;
+.menu-btn {
+  width: 90%;
+  max-width: 320px;
+  padding: 25px;
+  border-radius: 15px;
+  text-decoration: none;
   color: #fff;
-  padding: 50px 20px;
-  text-align: center;
+  font-weight: bold;
+  display: block;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: 0.2s;
 }
 
-/* フッター */
+.menu-btn:hover {
+  transform: scale(1.07);
+}
+
+/ カラー /
+.trial { background: #ff6600; }
+.diet { background: #e60023; }
+.bodymake { background: #007bff; }
+
+.menu-btn p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/ CTA /
+.cta {
+  background: #06C755;
+  color: #fff;
+  padding: 15px 25px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+/ フッター /
 footer {
-  background: #222;
-  color: #aaa;
+  background: #000;
   text-align: center;
   padding: 20px;
 }
 
-/* 追従ボタン */
-.fixed-btn {
+/ 固定LINE /
+.line-fixed {
   position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #ff6600;
-  text-align: center;
+  bottom: 20px;
+  right: 15px;
+  background: #06C755;
+  color: #fff;
   padding: 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.fixed-btn a {
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
+/ PC */
+@media(min-width:768px){
+  .flex {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 </style>
 </head>
@@ -119,93 +176,66 @@ footer {
 <body>
 
 <header>
-<h1>にしむら整骨院</h1>
-<p>交通事故専門｜熊本エリア対応</p>
+  <h1>🔥 apricot gym 🔥</h1>
+  <a href="https://www.instagram.com/gym_seikotuin?igsh=MWFjY2JqYnJ4ZDRjMw%3D%3D&utm_source=qr">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="insta-header">
+  </a>
 </header>
 
-<!-- 上 -->
+<nav>
+  <a href="#about">👤トレーナー</a>
+  <a href="#menu">💪メニュー</a>
+  <a href="#access">📍アクセス</a>
+</nav>
+
+<!-- トップ -->
 <section class="hero">
-<h1>交通事故の痛み<br>自己負担0円で治療できます</h1>
-
-<p>むち打ち・腰痛・しびれに対応</p>
-
-<p style="margin-top:20px; font-weight:bold; font-size:18px;">
-🚨 事故後は早めの対応が重要です<br>
-今すぐご相談ください
-</p>
-
-<p style="margin-top:20px; font-weight:bold;">
-予約はこちらから<br>⬇︎⬇︎⬇︎
-</p>
-
-<a href="https://lin.ee/TKMd7Z7" class="btn">
-無料でLINE相談する
-</a>
+  <div class="impact">ドン！！</div>
+  <h1>人生変えるなら、今だ。</h1>
+  <p>初心者OK・無理な食事制限なし</p>
+  <a href="https://lin.ee/xUmAtVC" class="cta">LINEで無料相談</a>
 </section>
 
-<section class="section">
-<h2>こんなお悩みありませんか？</h2>
-<div class="features">
-<div class="box">事故後から首が痛い（むち打ち）</div>
-<div class="box">病院では湿布だけで不安</div>
-<div class="box">保険の手続きが分からない</div>
-</div>
+<!-- トレーナー -->
+<section id="about" class="section">
+  <h2>🔥トレーナー紹介🔥</h2>
+  <img src="trainer.jpg">
+  <p>
+  あなた専用のトレーニングで<br>
+  最短で理想の身体へ。
+  </p>
 </section>
 
-<!-- 中 -->
-<section class="mid-cta">
-<h2>その悩み、今すぐ解決できます</h2>
+<!-- メニュー -->
+<section id="menu" class="section">
+  <h2>💪トレーニングメニュー</h2>
 
-<p style="font-weight:bold;">
-LINEで簡単に無料相談OK
-</p>
+  <div class="flex">
 
-<p>
-予約はこちらから<br>⬇︎⬇︎⬇︎
-</p>
+    <a href="#" class="menu-btn trial">
+      <h3>体験トレーニング</h3>
+      <p>まずは気軽にスタート</p>
+    </a>
 
-<a href="https://lin.ee/TKMd7Z7" class="btn">
-無料でLINE相談する
-</a>
-</section>
+    <a href="#" class="menu-btn diet">
+      <h3>ダイエットコース</h3>
+      <p>女性に人気No.1</p>
+    </a>
 
-<section class="section">
-<h2>当院が選ばれる理由</h2>
-<div class="features">
-<div class="box">✔ 自己負担0円で施術可能</div>
-<div class="box">✔ 保険会社とのやり取りサポート</div>
-<div class="box">✔ 弁護士紹介可能</div>
-<div class="box">✔ 国家資格保有スタッフ対応</div>
-</div>
-</section>
+    <a href="#" class="menu-btn bodymake">
+      <h3>ボディメイク</h3>
+      <p>筋肉・フィジーク特化</p>
+    </a>
 
-<!-- 下 -->
-<section class="cta">
-<h2>まずは無料相談</h2>
+  </div>
 
-<p style="font-weight:bold; font-size:18px;">
-相談だけでもOKです
-</p>
-
-<p>
-予約はこちらから<br>⬇︎⬇︎⬇︎
-</p>
-
-<a href="https://lin.ee/TKMd7Z7" class="btn">
-無料で今すぐLINE相談
-</a>
 </section>
 
 <footer>
-<p>© にしむら整骨院</p>
+  <p>© apricot gym</p>
 </footer>
 
-<!-- 追従 -->
-<div class="fixed-btn">
-<a href="https://lin.ee/TKMd7Z7">
-無料でLINE相談する
-</a>
-</div>
+<a href="https://lin.ee/xUmAtVC" class="line-fixed">LINE予約</a>
 
 </body>
 </html>
