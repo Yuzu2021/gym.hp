@@ -6,19 +6,15 @@
 <title>apricot gym</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  line-height: 1.6;
   background: linear-gradient(#111, #ffcc00);
   color: #fff;
 }
 
-/* 共通幅 */
 .container {
   max-width: 1000px;
   margin: auto;
@@ -26,40 +22,25 @@ body {
 }
 
 /* ヘッダー */
-header {
-  background: #000;
-  color: #ffcc00;
-}
-
+header { background: #000; color: #ffcc00; }
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
 }
+header h1 { margin: 0; font-size: 20px; }
 
-header h1 {
-  margin: 0;
-  font-size: 20px;
-}
-
-/* Instagram（小さく） */
+/* Instagram */
 .insta-header {
   width: 22px;
   opacity: 0.8;
-  transition: 0.2s;
 }
-.insta-header:hover {
-  opacity: 1;
-}
+.insta-header:hover { opacity: 1; }
 
 /* ナビ */
-nav {
-  background: #000;
-}
-.nav-inner {
-  padding: 8px 0;
-}
+nav { background: #000; }
+.nav-inner { padding: 8px 0; }
 nav a {
   color: #fff;
   margin-right: 15px;
@@ -67,62 +48,10 @@ nav a {
   font-size: 14px;
 }
 
-/* ヒーロー */
-.hero {
-  text-align: center;
-  padding: 70px 15px;
-}
-
-.impact {
-  font-size: 34px;
-  color: #ff0000;
-  font-weight: bold;
-  transform: rotate(-5deg);
-  margin-bottom: 10px;
-}
-
-.hero h1 {
-  font-size: 26px;
-  margin: 10px 0;
-}
-
-.hero p {
-  font-size: 15px;
-  opacity: 0.9;
-}
-
-/* CTA */
-.cta {
-  background: #06C755;
-  padding: 14px 26px;
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 16px;
-}
-
 /* セクション */
 .section {
   padding: 50px 0;
   text-align: center;
-}
-
-.section h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-/* トレーナー */
-#about {
-  background: #fff;
-  color: #000;
-}
-
-#about img {
-  width: 220px;
-  border-radius: 12px;
-  margin-bottom: 15px;
 }
 
 /* メニュー */
@@ -132,7 +61,6 @@ nav a {
   gap: 20px;
 }
 
-/* カード */
 .menu-btn {
   padding: 22px;
   border-radius: 15px;
@@ -143,26 +71,83 @@ nav a {
   box-shadow: 0 6px 18px rgba(0,0,0,0.3);
   transition: 0.2s;
 }
-
-.menu-btn:hover {
-  transform: translateY(-5px);
-}
-
-.menu-btn h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.menu-btn p {
-  font-size: 13px;
-  margin-top: 6px;
-  opacity: 0.9;
-}
+.menu-btn:hover { transform: translateY(-5px); }
 
 /* カラー */
-.trial { background: #ff6600; }
+.trial { background: linear-gradient(135deg,#00c853,#64dd17); }
+.tyoko { background: #ff6600; }
 .diet { background: #e60023; }
 .bodymake { background: #007bff; }
+
+/* CTAボタン（追加） */
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg,#00c853,#64dd17);
+  color: #fff;
+  padding: 16px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* CTAセクション */
+.cta-character {
+  background: #111;
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta-inner img {
+  width: 200px;
+  margin: 20px 0;
+}
+.limit {
+  color: #ff4444;
+  font-weight: bold;
+}
+
+/* ヒーロー */
+.hero {
+  text-align: center;
+  padding: 60px 15px;
+}
+.cta {
+  background: #06C755;
+  padding: 14px 26px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+/* トレーナー */
+#about {
+  background: #fff;
+  color: #000;
+}
+#about img {
+  width: 220px;
+  border-radius: 12px;
+}
+
+/* マップ */
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* FAQ */
+.faq-item {
+  background: #222;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
 
 /* フッター */
 footer {
@@ -171,7 +156,7 @@ footer {
   padding: 20px;
 }
 
-/* 固定LINE */
+/* LINE固定 */
 .line-fixed {
   position: fixed;
   bottom: 20px;
@@ -181,14 +166,11 @@ footer {
   padding: 14px 18px;
   border-radius: 50px;
   text-decoration: none;
-  font-size: 14px;
 }
 
 /* PC */
 @media(min-width:768px){
-  .flex {
-    flex-direction: row;
-  }
+  .flex { flex-direction: row; }
 }
 </style>
 </head>
@@ -207,7 +189,7 @@ footer {
 <nav>
   <div class="container nav-inner">
     <a href="#about">🏋️‍♂️トレーナー紹介</a>
-    <a href="#menu"></a>
+    <a href="#menu">🏋️プラン</a>
     <a href="#access">🚕アクセス</a>
     <a href="#QA">🙋Q&A</a>
   </div>
@@ -219,125 +201,89 @@ footer {
     <h2>🏋️プラン一覧🏋️‍♀️</h2>
 
     <div class="flex">
-
-      <!-- ★ここだけ変更済み -->
       <a href="https://yuzu2021.github.io/taiken-page/" class="menu-btn trial">
-        <h3>体験トレーニング</h3>
-        <p>まずは気軽にスタート</p>
+        ５００円体験プラン
+      </a>
+
+      <a href="https://yuzu2021.github.io/taiken-page/" class="menu-btn tyoko">
+        初級者チョコトレ
       </a>
 
       <a href="https://yuzu2021.github.io/diet-page/" class="menu-btn diet">
-        <h3>ダイエットコース</h3>
-        <p>女性に人気No.1</p>
+        ダイエット
       </a>
 
       <a href="#" class="menu-btn bodymake">
-        <h3>ボディメイク</h3>
-        <p>筋肉・フィジーク特化</p>
+        ボディメイク
       </a>
-
     </div>
   </div>
 </section>
 
-
- <section id="access" class="section">
+<!-- アクセス -->
+<section id="access" class="section">
   <h2>🚕アクセス🗺️</h2>
   <p>熊本市南区御幸笛田4-4-75</p>
 
-  <a href="https://maps.app.goo.gl/C2bwAdXybJHKL8Ef6">
-    <div class="map">
-      <iframe src="https://www.google.com/maps?q=熊本市南区御幸笛田4-4-75&output=embed"></iframe>
-    </div>
-  </a>
-</section> 
-  
+  <div class="map">
+    <iframe src="https://www.google.com/maps?q=熊本市南区御幸笛田4-4-75&output=embed"></iframe>
+  </div>
+</section>
 
 <!-- トレーナー -->
 <section id="about" class="section">
   <div class="container">
-    <h1>【トレーナー紹介】</h1>
-    
+    <h1>トレーナー紹介</h1>
+
     <img src="osato.jpg">
-    <h2>🔥大里和也🔥</h2>
-    
+    <h2>大里和也</h2>
+
     <img src="nishimura.jpg">
-    <h2>🔥西村優一🔥</h2>
-    <p>
-    あなた専用のトレーニングで<br>
-    最短で理想の身体へ。
-    </p>
+    <h2>西村優一</h2>
   </div>
 </section>
 
+<!-- CTA -->
 <section class="cta-character">
-  <div class="cta-inner">
-    
-    <h2>理想の身体、ここから変わる。</h2>
-    
-    <p class="cta-text">
-      運動未経験でも大丈夫。<br>
-      無理な食事制限なしで、続けられる方法を提案します。
-    </p>
+  <h2>理想の身体、ここから変わる。</h2>
+  <p>初心者でもOK</p>
 
-    <img src="gymgirl2.jpg" alt="フィジークキャラクター">
+  <img src="gymgirl2.jpg">
 
-    <p class="limit">
-      【残り3名】今月の新規受付はあとわずかです
-    </p>
+  <p class="limit">残り3名</p>
 
-    <a href="https://lin.ee/xUmAtVC" class="cta-btn">
-      LINEで無料相談する
-    </a>
-
-  </div>
+  <a href="https://lin.ee/xUmAtVC" class="cta-btn">
+    LINEで無料相談
+  </a>
 </section>
 
-
-<!--  -->
-<section class="hero">
-  <div class="container">
-    <div class="impact"></div>
-    <h1>人生変えるなら、今だ。</h1>
-    <p>初心者OK・無理な食事制限なし</p>
-    <a href="https://lin.ee/xUmAtVC" class="cta">LINEで無料相談</a>
-  </div>
-</section>
-
- <!-- Q&A -->
+<!-- FAQ -->
 <section id="QA" class="section">
   <h2>よくある質問</h2>
 
-  <div class="faq">
-
-    <div class="faq-item" onclick="toggle(this)">
-      <div class="faq-question">施術は痛くない？ <span>＋</span></div>
-      <div class="faq-answer">無理な施術は行いませんのでご安心ください。</div>
-    </div>
-
-    <div class="faq-item" onclick="toggle(this)">
-      <div class="faq-question">どのくらい時間がかかる？ <span>＋</span></div>
-      <div class="faq-answer">初回は50〜60分ほどです。2回目以降は30〜40分お時間を頂いております。</div>
-    </div>
-
-    <div class="faq-item" onclick="toggle(this)">
-      <div class="faq-question">予約は必要？ <span>＋</span></div>
-      <div class="faq-answer">予約無しでもOKですが、予約優先なのでLINE予約がおすすめです。</div>
-    </div>
-
-    <div class="faq-item" onclick="toggle(this)">
-      <div class="faq-question">駐車場はある？ <span>＋</span></div>
-      <div class="faq-answer">駐車場６台完備しております。</div>
-    </div>
-
+  <div class="faq-item" onclick="toggle(this)">
+    Q. 初心者でもOK？
+    <div class="faq-answer">大丈夫です！</div>
   </div>
-</section> 
+
+  <div class="faq-item" onclick="toggle(this)">
+    Q. 駐車場ある？
+    <div class="faq-answer">6台あります！</div>
+  </div>
+</section>
 
 <footer>
   <p>© apricot gym</p>
 </footer>
 
 <a href="https://lin.ee/xUmAtVC" class="line-fixed">LINE予約</a>
+
+<script>
+function toggle(el){
+  const answer = el.querySelector(".faq-answer");
+  answer.style.display = answer.style.display === "block" ? "none" : "block";
+}
+</script>
 
 </body>
 </html>
